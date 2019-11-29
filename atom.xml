@@ -5,9 +5,9 @@
   <subtitle>Test for Syj</subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://mocus.gitee.io/blog/"/>
+  <link href="https://mocus.gitee.io/blog/"/>
   <updated>2019-11-29T07:03:26.017Z</updated>
-  <id>http://mocus.gitee.io/blog/</id>
+  <id>https://mocus.gitee.io/blog/</id>
   
   <author>
     <name>MocusEZ</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>配置信息</title>
-    <link href="http://mocus.gitee.io/blog/2019/11/29/%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/"/>
-    <id>http://mocus.gitee.io/blog/2019/11/29/%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/</id>
+    <link href="https://mocus.gitee.io/blog/2019/11/29/%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/"/>
+    <id>https://mocus.gitee.io/blog/2019/11/29/%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/</id>
     <published>2019-11-29T07:02:08.000Z</published>
     <updated>2019-11-29T07:03:26.017Z</updated>
     
@@ -36,15 +36,15 @@
     </summary>
     
     
-      <category term="用过就丢的东西" scheme="http://mocus.gitee.io/blog/categories/%E7%94%A8%E8%BF%87%E5%B0%B1%E4%B8%A2%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+      <category term="用过就丢的东西" scheme="https://mocus.gitee.io/blog/categories/%E7%94%A8%E8%BF%87%E5%B0%B1%E4%B8%A2%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
     
   </entry>
   
   <entry>
     <title>我的第一篇文章</title>
-    <link href="http://mocus.gitee.io/blog/2019/11/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <id>http://mocus.gitee.io/blog/2019/11/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
+    <link href="https://mocus.gitee.io/blog/2019/11/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>https://mocus.gitee.io/blog/2019/11/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
     <published>2019-11-29T05:08:38.000Z</published>
     <updated>2019-11-29T06:59:52.771Z</updated>
     
@@ -61,15 +61,15 @@
     </summary>
     
     
-      <category term="用过就丢的东西" scheme="http://mocus.gitee.io/blog/categories/%E7%94%A8%E8%BF%87%E5%B0%B1%E4%B8%A2%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+      <category term="用过就丢的东西" scheme="https://mocus.gitee.io/blog/categories/%E7%94%A8%E8%BF%87%E5%B0%B1%E4%B8%A2%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://mocus.gitee.io/blog/2019/11/28/hello-world/"/>
-    <id>http://mocus.gitee.io/blog/2019/11/28/hello-world/</id>
+    <link href="https://mocus.gitee.io/blog/2019/11/28/hello-world/"/>
+    <id>https://mocus.gitee.io/blog/2019/11/28/hello-world/</id>
     <published>2019-11-28T05:58:29.619Z</published>
     <updated>2019-11-28T00:28:08.228Z</updated>
     
