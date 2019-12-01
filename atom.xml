@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mocus.gitee.io/"/>
-  <updated>2019-11-30T23:23:01.671Z</updated>
+  <updated>2019-12-01T01:41:38.998Z</updated>
   <id>https://mocus.gitee.io/</id>
   
   <author>
@@ -21,16 +21,13 @@
     <link href="https://mocus.gitee.io/2019/12/01/%E4%BB%A3%E7%A0%81%E8%AE%B0%E5%BD%95/"/>
     <id>https://mocus.gitee.io/2019/12/01/%E4%BB%A3%E7%A0%81%E8%AE%B0%E5%BD%95/</id>
     <published>2019-11-30T23:14:51.000Z</published>
-    <updated>2019-11-30T23:23:01.671Z</updated>
+    <updated>2019-12-01T01:41:38.998Z</updated>
     
-    <content type="html"><![CDATA[<p>环境安装<br>npm install hexo-generator-feed –save<br>npm install -g hexo-cli<br>npm install hexo-generator-sitemap<br>npm install hexo-deployer-git –save</p>]]></content>
+    <content type="html"><![CDATA[<p>本页面在termux环境中生成</p><a id="more"></a><p>#环境安装<br>npm install hexo-generator-feed –save<br>npm install -g hexo-cli<br>npm install hexo-generator-sitemap<br>npm install hexo-deployer-git –save<br>  !– more –&gt;</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;环境安装&lt;br&gt;npm install hexo-generator-feed –save&lt;br&gt;npm install -g hexo-cli&lt;br&gt;npm install hexo-generator-sitemap&lt;br&gt;npm install hexo-deploy
-      
+      &lt;p&gt;本页面在termux环境中生成&lt;/p&gt;
     
     </summary>
     
