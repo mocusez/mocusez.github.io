@@ -50,13 +50,13 @@
 <meta name="keywords" content="Test">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mox的空间">
-<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;categories&#x2F;%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;categories&#x2F;%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="Mox的空间">
 <meta property="og:description" content="Hello world">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://mocus.gitee.io/categories/%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="https://mocus.gitee.io/categories/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -70,7 +70,7 @@
   };
 </script>
 
-  <title>分类: 笔记 | Mox的空间</title>
+  <title>分类: 日常笔记 | Mox的空间</title>
   
 
 
@@ -186,7 +186,7 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <h1 class="collection-header">笔记
+        <h1 class="collection-header">日常笔记
           <small>分类</small>
         </h1>
       </div>
@@ -316,6 +316,28 @@
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
   </div>
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>  Sometimes your whole life boils down to one insame move.
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/14/2019 12:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+
 
         
 
