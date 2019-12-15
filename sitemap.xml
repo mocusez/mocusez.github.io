@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mocus.gitee.io/2019/12/15/%E7%A0%B4%E8%A7%A3%E9%97%A8%E5%A8%83Gatebaby%E7%8F%AD%E7%89%8C/</loc>
+    
+    <lastmod>2019-12-15T08:51:56.859Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mocus.gitee.io/2019/12/01/MSF%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2019-12-15T01:33:39.163Z</lastmod>
@@ -9,21 +16,14 @@
   </url>
   
   <url>
-    <loc>https://mocus.gitee.io/2019/12/15/%E7%A0%B4%E8%A7%A3%E9%97%A8%E5%A8%83Gatebaby%E7%8F%AD%E7%89%8C/</loc>
-    
-    <lastmod>2019-12-15T01:33:26.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/lib/three/renovate.json</loc>
+    <loc>https://mocus.gitee.io/lib/three/package.json</loc>
     
     <lastmod>2019-12-15T00:27:11.422Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mocus.gitee.io/lib/three/package.json</loc>
+    <loc>https://mocus.gitee.io/lib/three/renovate.json</loc>
     
     <lastmod>2019-12-15T00:27:11.422Z</lastmod>
     
