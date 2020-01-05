@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mocus.gitee.io/tags/index.html</loc>
+    
+    <lastmod>2020-01-05T03:26:42.344Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mocus.gitee.io/lib/three/README.html</loc>
+    
+    <lastmod>2020-01-05T03:26:42.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mocus.gitee.io/lib/three/package.json</loc>
+    
+    <lastmod>2020-01-05T03:26:42.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mocus.gitee.io/lib/three/renovate.json</loc>
+    
+    <lastmod>2020-01-05T03:26:42.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mocus.gitee.io/lib/three/package-lock.json</loc>
+    
+    <lastmod>2020-01-05T03:26:42.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mocus.gitee.io/categories/index.html</loc>
+    
+    <lastmod>2020-01-05T03:26:42.174Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mocus.gitee.io/2020/huandianzhan/</loc>
     
     <lastmod>2020-01-05T02:10:44.000Z</lastmod>
@@ -26,48 +68,6 @@
     <loc>https://mocus.gitee.io/2019/msfdailystudy/</loc>
     
     <lastmod>2019-12-30T23:14:51.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/tags/index.html</loc>
-    
-    <lastmod>2019-12-21T15:02:32.347Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/lib/three/renovate.json</loc>
-    
-    <lastmod>2019-12-21T15:02:32.340Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/lib/three/package.json</loc>
-    
-    <lastmod>2019-12-21T15:02:32.337Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/lib/three/README.html</loc>
-    
-    <lastmod>2019-12-21T15:02:32.337Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/lib/three/package-lock.json</loc>
-    
-    <lastmod>2019-12-21T15:02:32.337Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/categories/index.html</loc>
-    
-    <lastmod>2019-12-21T15:02:32.214Z</lastmod>
     
   </url>
   
