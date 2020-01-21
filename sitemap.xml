@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mocus.gitee.io/board/index.html</loc>
+    
+    <lastmod>2020-01-21T07:40:29.195Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mocus.gitee.io/2019/setinfo/</loc>
+    
+    <lastmod>2020-01-21T07:02:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mocus.gitee.io/sharezone/index.html</loc>
     
     <lastmod>2020-01-19T03:41:31.779Z</lastmod>
@@ -54,20 +68,6 @@
     <loc>https://mocus.gitee.io/2019/guangkeji/</loc>
     
     <lastmod>2019-12-21T14:16:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/2019/richangdaima/</loc>
-    
-    <lastmod>2019-11-30T23:14:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/2019/setinfo/</loc>
-    
-    <lastmod>2019-11-29T07:02:08.000Z</lastmod>
     
   </url>
   
