@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mocus.gitee.io/sharezone/index.html</loc>
+    
+    <lastmod>2020-01-21T12:07:00.112Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mocus.gitee.io/board/index.html</loc>
+    
+    <lastmod>2020-01-21T11:41:18.472Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mocus.gitee.io/2020/androidgnupg/</loc>
     
     <lastmod>2020-01-21T08:15:27.000Z</lastmod>
@@ -9,23 +23,9 @@
   </url>
   
   <url>
-    <loc>https://mocus.gitee.io/board/index.html</loc>
-    
-    <lastmod>2020-01-21T07:40:29.195Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mocus.gitee.io/2019/setinfo/</loc>
     
     <lastmod>2020-01-21T07:02:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mocus.gitee.io/sharezone/index.html</loc>
-    
-    <lastmod>2020-01-19T03:41:31.779Z</lastmod>
     
   </url>
   
