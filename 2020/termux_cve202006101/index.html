@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="Test">
+  <meta name="description" content="这是一个由美国国安局（NSA）提交的漏洞,出现漏洞的系统是2020年之前的win 10和windows server 2019">
 <meta name="keywords" content="Test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇文章">
-<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;2019&#x2F;first&#x2F;index.html">
+<meta property="og:title" content="Termux笔记：CVE-2020-0601复现">
+<meta property="og:url" content="https:&#x2F;&#x2F;mocus.gitee.io&#x2F;2020&#x2F;termux_cve202006101&#x2F;index.html">
 <meta property="og:site_name" content="Mox的笔记库">
-<meta property="og:description" content="Test">
+<meta property="og:description" content="这是一个由美国国安局（NSA）提交的漏洞,出现漏洞的系统是2020年之前的win 10和windows server 2019">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-29T05:08:39.000Z">
+<meta property="og:updated_time" content="2020-01-25T13:11:26.000Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://mocus.gitee.io/2019/first/">
+<link rel="canonical" href="https://mocus.gitee.io/2020/termux_cve202006101/">
 
 
 <script id="page-configurations">
@@ -70,7 +70,7 @@
     isArchive: false
   };
 </script>
-  <title>我的第一篇文章 | Mox的笔记库</title>
+  <title>Termux笔记：CVE-2020-0601复现 | Mox的笔记库</title>
   
 
 
@@ -195,7 +195,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mocus.gitee.io/2019/first/">
+    <link itemprop="mainEntityOfPage" href="https://mocus.gitee.io/2020/termux_cve202006101/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -208,12 +208,16 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          我的第一篇文章
+          Termux笔记：CVE-2020-0601复现
         </h1>
 
         <div class="post-meta">
 
 
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -221,7 +225,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-29 13:08:38 / 修改时间：13:08:39" itemprop="dateCreated datePublished" datetime="2019-11-29T13:08:38+08:00">2019-11-29</time>
+              <time title="创建时间：2020-01-25 21:10:26 / 修改时间：21:11:26" itemprop="dateCreated datePublished" datetime="2020-01-25T21:10:26+08:00">2020-01-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -229,8 +233,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/rubbish/" itemprop="url" rel="index">
-                    <span itemprop="name">用过就丢的东西</span>
+                  <a href="/categories/termuxstudy/" itemprop="url" rel="index">
+                    <span itemprop="name">Termux笔记</span>
                   </a>
                 </span>
             </span>
@@ -244,8 +248,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/first/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/first/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/termux_cve202006101/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/termux_cve202006101/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -260,7 +264,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Test</p>
+        <p>这是一个由美国国安局（NSA）提交的漏洞,出现漏洞的系统是2020年之前的win 10和windows server 2019</p>
+<a id="more"></a>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>基于Termux的乌班图<br>POC（<a href="https://github.com/ollypwn/CVE-2020-0601）" target="_blank" rel="noopener">https://github.com/ollypwn/CVE-2020-0601）</a><br>软件包: openssl 1.1.0 ruby 2.4.0<br>签名工具：signtool.exe（Visual Studio里面集成）<br>或osslsigncode （Linux 我只在Ubuntu（ARM）上实现过）</p>
+<h2 id="安装osslsigncode"><a href="#安装osslsigncode" class="headerlink" title="安装osslsigncode"></a>安装osslsigncode</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;mtrojnar&#x2F;osslsigncode.git</span></pre></td></tr></table></figure>
+<p>安装依赖环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install build-essential autoconf libtool libssl-dev python3-pkgconfig libcurl4-gnutls-dev</span></pre></td></tr></table></figure>
+<p>安装指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd osslsigncode</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">.&#x2F;autogen.sh</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  .&#x2F;configure</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  make</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  make install</span></pre></td></tr></table></figure>
+<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ollypwn&#x2F;CVE-2020-0601.git</span></pre></td></tr></table></figure>
+<p>下载完成后，按照readme.md上”Code Signing”的命令操作即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd CVE-2020-0601</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&quot;Code Signing&quot;</span></pre></td></tr></table></figure>
+<p>生成的EXE文件发到电脑上进行检验</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>乌班图的安装过程有点费力，不过这个结果我相当满意（不需要电脑也能完成渗透）</p>
 
     </div>
 
@@ -276,7 +292,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="/https:/mocus.gitee.io/2019/first/" title="我的第一篇文章">https://mocus.gitee.io/2019/first/</a>
+    <a href="/https:/mocus.gitee.io/2020/termux_cve202006101/" title="Termux笔记：CVE-2020-0601复现">https://mocus.gitee.io/2020/termux_cve202006101/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC</a> 许可协议。转载请注明出处！
@@ -292,10 +308,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/begin/" rel="next" title="Begining">
-      Begining <i class="fa fa-chevron-right"></i>
+    <a href="/2020/androidgnupg/" rel="prev" title="在Android(Termux)上使用GnuPG">
+      <i class="fa fa-chevron-left"></i> 在Android(Termux)上使用GnuPG
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/termux_linux/" rel="next" title="Termux笔记：Arch与Ubuntu进坑记录">
+      Termux笔记：Arch与Ubuntu进坑记录 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -335,6 +354,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">1.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装osslsigncode"><span class="nav-number">2.</span> <span class="nav-text">安装osslsigncode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作"><span class="nav-number">3.</span> <span class="nav-text">操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mocus.gitee.io/"/>
-  <updated>2020-01-21T08:15:27.000Z</updated>
+  <updated>2020-01-25T14:30:51.000Z</updated>
   <id>https://mocus.gitee.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Termux笔记：Arch与Ubuntu进坑记录</title>
+    <link href="https://mocus.gitee.io/2020/termux_linux/"/>
+    <id>https://mocus.gitee.io/2020/termux_linux/</id>
+    <published>2020-01-25T14:25:51.000Z</published>
+    <updated>2020-01-25T14:30:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果说Termux对于安卓手机是金坷垃,那么基于Termux的Linux系统就是金坷垃的二次方(ง •̀_•́)ง</p><a id="more"></a><h2 id="Arch"><a href="#Arch" class="headerlink" title="Arch"></a>Arch</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>话不多说，先clone一波</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;TermuxArch&#x2F;TermuxArch.git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;gitee.com&#x2F;mocus&#x2F;TermuxArch.git ##我自己的搬运的上面的镜像</span></pre></td></tr></table></figure><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd TermuxArch</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">bash setupTermuxArch.bash</span></pre></td></tr></table></figure><p>然后自动安装（记得要挂代理）<br>……（坑了我一个拜年祭的时间）<br>不过网上有老哥好像解决了没有代理（or 网速太慢）的问题<br><a href="https://www.cnblogs.com/ITKing9/p/10853787.html" target="_blank" rel="noopener">https://www.cnblogs.com/ITKing9/p/10853787.html</a><br>安装完了以后</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">startarch</span></pre></td></tr></table></figure><p>效果如下<br>（图片被图床给吃了，改天再放）</p><h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><p>第二天装软件的时候发现很多软件包装不了（有些软件包没有Arch的包）只好老老实实的用乌班图。<br>没想到的是安装速度更快（时间被白嫖.jpg）</p><p>Wiki页写得很清楚，照做，避开我下面说的坑就可以了。<br><a href="https://wiki.termux.com/wiki/Ubuntu" target="_blank" rel="noopener">https://wiki.termux.com/wiki/Ubuntu</a><br>启动Shell可能下载不了,但文件内容不大，复制粘贴内容到.sh后缀的文件就行</p><p>（？.jpg）</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这些Linux发行版大大拓展了Termux的功能，相当于树莓派有的软件现在全部都可以运行了。<br>终于可以运行jdk，gcc了，好评👍</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果说Termux对于安卓手机是金坷垃,那么基于Termux的Linux系统就是金坷垃的二次方(ง •̀_•́)ง&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Termux笔记" scheme="https://mocus.gitee.io/categories/termuxstudy/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Termux笔记：CVE-2020-0601复现</title>
+    <link href="https://mocus.gitee.io/2020/termux_cve202006101/"/>
+    <id>https://mocus.gitee.io/2020/termux_cve202006101/</id>
+    <published>2020-01-25T13:10:26.000Z</published>
+    <updated>2020-01-25T13:11:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一个由美国国安局（NSA）提交的漏洞,出现漏洞的系统是2020年之前的win 10和windows server 2019</p><a id="more"></a><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>基于Termux的乌班图<br>POC（<a href="https://github.com/ollypwn/CVE-2020-0601）" target="_blank" rel="noopener">https://github.com/ollypwn/CVE-2020-0601）</a><br>软件包: openssl 1.1.0 ruby 2.4.0<br>签名工具：signtool.exe（Visual Studio里面集成）<br>或osslsigncode （Linux 我只在Ubuntu（ARM）上实现过）</p><h2 id="安装osslsigncode"><a href="#安装osslsigncode" class="headerlink" title="安装osslsigncode"></a>安装osslsigncode</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;mtrojnar&#x2F;osslsigncode.git</span></pre></td></tr></table></figure><p>安装依赖环境</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install build-essential autoconf libtool libssl-dev python3-pkgconfig libcurl4-gnutls-dev</span></pre></td></tr></table></figure><p>安装指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd osslsigncode</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">.&#x2F;autogen.sh</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  .&#x2F;configure</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  make</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  make install</span></pre></td></tr></table></figure><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ollypwn&#x2F;CVE-2020-0601.git</span></pre></td></tr></table></figure><p>下载完成后，按照readme.md上”Code Signing”的命令操作即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd CVE-2020-0601</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&quot;Code Signing&quot;</span></pre></td></tr></table></figure><p>生成的EXE文件发到电脑上进行检验</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>乌班图的安装过程有点费力，不过这个结果我相当满意（不需要电脑也能完成渗透）</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一个由美国国安局（NSA）提交的漏洞,出现漏洞的系统是2020年之前的win 10和windows server 2019&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Termux笔记" scheme="https://mocus.gitee.io/categories/termuxstudy/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>在Android(Termux)上使用GnuPG</title>
@@ -108,7 +150,7 @@
     <published>2019-12-15T01:06:27.000Z</published>
     <updated>2019-12-31T01:06:27.000Z</updated>
     
-    <content type="html"><![CDATA[<p>学校给高中部新装了班牌，实质上就是Andriod大平板，可以用来做很多事情（比如说玩Angrybird）</p><p>这么好用的东西怎么能有限制呢？</p><a id="more"></a><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="进入设置界面"><a href="#进入设置界面" class="headerlink" title="进入设置界面"></a>进入设置界面</h3><p>随便找一个文本框（比如“消息”-“账户”），这时候会弹出输入法，在里面找一下输入法的设置。挨个点入“编辑”——“自定义短语”。这时候向右滑动，奇妙的事情就会发生(⊙o⊙)…</p><p><a href="https://imgse.com/i/QWgqne" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/15/QWgqne.md.png" alt="QWgqne.md.png"></a><br><a href="https://imgse.com/i/QWgL0H" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/15/QWgL0H.md.png" alt="QWgL0H.md.png"></a><br><a href="https://imgse.com/i/QWgHXD" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/15/QWgHXD.md.png" alt="QWgHXD.md.png"></a></p><p>这时候做你该做的事情去吧</p><h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><h4 id="方案一（有失败可能）"><a href="#方案一（有失败可能）" class="headerlink" title="方案一（有失败可能）"></a>方案一（有失败可能）</h4><p>在“设置”——“关于设备”中，多点几下“Android安全程序补丁级别”，就会跳转到浏览器</p><p><img src="https://s2.ax1x.com/2019/12/15/QWoFkF.png" alt="QWoFkF.png"></p><p>你可以开热点让班牌上网！</p><p><img src="https://s2.ax1x.com/2019/12/15/QWoUnP.gif" alt="QWoUnP.gif"></p><p>然而，还有更快的方式！</p><p>在班牌浏览器输入 <a href="http://10.105.100.239/" target="_blank" rel="noopener">http://10.105.100.239/</a> （内网，班牌可直连）</p><p><strong>你们可以用我在班牌搭建的下载站找到Angrybird和后面需要的软件</u></strong></p><p><img src="https://s2.ax1x.com/2019/12/15/QfVLAf.png" alt="QfVLAf.png"></p><h4 id="方案二（100-可行）"><a href="#方案二（100-可行）" class="headerlink" title="方案二（100%可行）"></a>方案二（100%可行）</h4><p>没有手机的同学怎么办？安装ADB解决（你需要班级的电脑）</p><p>adb原理： <a href="https://developer.android.google.cn/studio/command-line/adb" target="_blank" rel="noopener">https://developer.android.google.cn/studio/command-line/adb</a> </p><p>自己去网上找文件，加入到系统变量(自行百度)，打开CMD，输入IP连接</p><p>（12.17日更新：补个下载链接</p><p>百度云：<a href="https://pan.baidu.com/s/1bJIc0bD6gGmrtiIEZjSlaw" target="_blank" rel="noopener">https://pan.baidu.com/s/1bJIc0bD6gGmrtiIEZjSlaw</a> 提取码：0w2o</p><p>你们也可以在 <a href="http://10.105.100.239" target="_blank" rel="noopener">http://10.105.100.239</a> 中找到adb.zip，下载解压即可。）</p><p>IP在“网络设置”——“以太网”中找</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">adb connect 10.105.100.xx  #IP地址替换成班牌</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">adb install -r xx.apk</span></pre></td></tr></table></figure><p>(12.31日更新：经证实，班牌网络已被学校的网神防火墙拦下)</p><h2 id="安装Nova-Launcher"><a href="#安装Nova-Launcher" class="headerlink" title="安装Nova-Launcher"></a>安装Nova-Launcher</h2><p>（感谢我的朋友syj的帮助）</p><p>去百度找，或在我的下载站中下载，应该可以直接安装</p><p>安装完以后，将其设为桌面，就能绕开限制</p><p>（由于没有样机做演示，所以请大家自行脑补画面）</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>想要装更多软件，就只能走方法二</p><p>也可以联系我更新下载站软件，但我不一定会回复</p><p>理论上应该可以在班级电脑搭设代理服务器（如CCproxy），让班牌玩上部落冲突，但我没去试</p><p>应该还有很多玩法可以开发</p><p><img src="https://s2.ax1x.com/2019/12/15/QfVRAK.jpg" alt="QfVRAK.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<p>学校给高中部新装了班牌，实质上就是Andriod大平板，可以用来做很多事情（比如说玩Angrybird）</p><p>这么好用的东西怎么能有限制呢？</p><a id="more"></a><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="进入设置界面"><a href="#进入设置界面" class="headerlink" title="进入设置界面"></a>进入设置界面</h3><p>随便找一个文本框（比如“消息”-“账户”），这时候会弹出输入法，在里面找一下输入法的设置。挨个点入“编辑”——“自定义短语”。这时候向右滑动，奇妙的事情就会发生(⊙o⊙)…</p><p><a href="https://imgse.com/i/QWgqne" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/15/QWgqne.md.png" alt="QWgqne.md.png"></a><br><a href="https://imgse.com/i/QWgL0H" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/15/QWgL0H.md.png" alt="QWgL0H.md.png"></a><br><a href="https://imgse.com/i/QWgHXD" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/12/15/QWgHXD.md.png" alt="QWgHXD.md.png"></a></p><p>这时候做你该做的事情去吧</p><h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><h4 id="方案一（有失败可能）"><a href="#方案一（有失败可能）" class="headerlink" title="方案一（有失败可能）"></a>方案一（有失败可能）</h4><p>在“设置”——“关于设备”中，多点几下“Android安全程序补丁级别”，就会跳转到浏览器</p><p><img src="https://s2.ax1x.com/2019/12/15/QWoFkF.png" alt="QWoFkF.png"></p><p>你可以开热点让班牌上网！</p><p><img src="https://s2.ax1x.com/2019/12/15/QWoUnP.gif" alt="QWoUnP.gif"></p><p>然而，还有更快的方式！</p><p>在班牌浏览器输入 <a href="http://10.105.100.239/" target="_blank" rel="noopener">http://10.105.100.239/</a> （集美中学内网，班牌可直连）</p><p><strong>你们可以用我在班牌搭建的下载站找到Angrybird和后面需要的软件</u></strong></p><p><img src="https://s2.ax1x.com/2019/12/15/QfVLAf.png" alt="QfVLAf.png"></p><h4 id="方案二（100-可行）"><a href="#方案二（100-可行）" class="headerlink" title="方案二（100%可行）"></a>方案二（100%可行）</h4><p>没有手机的同学怎么办？安装ADB解决（你需要班级的电脑）</p><p>adb原理： <a href="https://developer.android.google.cn/studio/command-line/adb" target="_blank" rel="noopener">https://developer.android.google.cn/studio/command-line/adb</a> </p><p>自己去网上找文件，加入到系统变量(自行百度)，打开CMD，输入IP连接</p><p>（12.17日更新：补个下载链接</p><p>百度云：<a href="https://pan.baidu.com/s/1bJIc0bD6gGmrtiIEZjSlaw" target="_blank" rel="noopener">https://pan.baidu.com/s/1bJIc0bD6gGmrtiIEZjSlaw</a> 提取码：0w2o</p><p>你们也可以在 <a href="http://10.105.100.239" target="_blank" rel="noopener">http://10.105.100.239</a> 中找到adb.zip，下载解压即可。）</p><p>IP在“网络设置”——“以太网”中找</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">adb connect 10.105.100.xx  #IP地址替换成班牌</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">adb install -r xx.apk</span></pre></td></tr></table></figure><p>(12.31日更新：经证实，班牌网络已被学校的网神防火墙拦下)</p><h2 id="安装Nova-Launcher"><a href="#安装Nova-Launcher" class="headerlink" title="安装Nova-Launcher"></a>安装Nova-Launcher</h2><p>（感谢我的朋友syj的帮助）</p><p>去百度找，或在我的下载站中下载，应该可以直接安装</p><p>安装完以后，将其设为桌面，就能绕开限制</p><p>（由于没有样机做演示，所以请大家自行脑补画面）</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>想要装更多软件，就只能走方法二</p><p>也可以联系我更新下载站软件，但我不一定会回复</p><p>理论上应该可以在班级电脑搭设代理服务器（如CCproxy），让班牌玩上部落冲突，但我没去试</p><p>应该还有很多玩法可以开发</p><p><img src="https://s2.ax1x.com/2019/12/15/QfVRAK.jpg" alt="QfVRAK.jpg"></p>]]></content>
     
     <summary type="html">
     
