@@ -54,8 +54,10 @@
 <meta property="og:site_name" content="Mox的笔记库">
 <meta property="og:description" content="如果说Termux对于安卓手机是金坷垃,那么基于Termux的Linux系统就是金坷垃的二次方(ง •̀_•́)ง">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;img.rruu.net&#x2F;image&#x2F;5e326a0d42873">
 <meta property="og:updated_time" content="2020-01-25T14:30:51.000Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;img.rruu.net&#x2F;image&#x2F;5e326a0d42873">
 
 <link rel="canonical" href="https://mocus.gitee.io/2020/termux_linux/">
 
@@ -272,12 +274,12 @@
 <h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd TermuxArch</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">bash setupTermuxArch.bash</span></pre></td></tr></table></figure>
 <p>然后自动安装（记得要挂代理）<br>……（坑了我一个拜年祭的时间）<br>不过网上有老哥好像解决了没有代理（or 网速太慢）的问题<br><a href="https://www.cnblogs.com/ITKing9/p/10853787.html" target="_blank" rel="noopener">https://www.cnblogs.com/ITKing9/p/10853787.html</a><br>安装完了以后</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">startarch</span></pre></td></tr></table></figure>
-<p>效果如下<br>（图片被图床给吃了，改天再放）</p>
+<p>效果如下<br><img src="https://img.rruu.net/image/5e326a0d42873" alt=""></p>
 <h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><p>第二天装软件的时候发现很多软件包装不了（有些软件包没有Arch的包）只好老老实实的用乌班图。<br>没想到的是安装速度更快（时间被白嫖.jpg）</p>
 <p>Wiki页写得很清楚，照做，避开我下面说的坑就可以了。<br><a href="https://wiki.termux.com/wiki/Ubuntu" target="_blank" rel="noopener">https://wiki.termux.com/wiki/Ubuntu</a><br>启动Shell可能下载不了,但文件内容不大，复制粘贴内容到.sh后缀的文件就行</p>
 <h3 id="更换软件源"><a href="#更换软件源" class="headerlink" title="更换软件源"></a>更换软件源</h3><p>我在网上找的源很多都不适用ARM Ubuntu 19.04所以这里贴一个备忘</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-backports main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-proposed main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-security main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-updates main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">deb-src http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">deb-src http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-backports main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">deb-src http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-proposed main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">deb-src http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-security main multiverse restricted universe</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">deb-src http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;ubuntu-ports&#x2F; disco-updates main multiverse restricted universe</span></pre></td></tr></table></figure>
-<p>（？.jpg）</p>
+
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这些Linux发行版大大拓展了Termux的功能，相当于树莓派有的软件现在全部都可以运行了。<br>终于可以运行jdk，gcc了，好评👍</p>
 
     </div>
@@ -399,7 +401,10 @@
           <a href="https://www.sqlsec.com/" title="https:&#x2F;&#x2F;www.sqlsec.com" rel="noopener" target="_blank">国光</a>
         </li>
         <li class="links-of-blogroll-item">
-          <a href="https://kb3146706.github.io/" title="https:&#x2F;&#x2F;kb3146706.github.io&#x2F;" rel="noopener" target="_blank">Syj的博客</a>
+          <a href="https://kb3146706.github.io/" title="https:&#x2F;&#x2F;kb3146706.github.io" rel="noopener" target="_blank">Syj的博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://dylan903.coding.me/" title="https:&#x2F;&#x2F;dylan903.coding.me&#x2F;" rel="noopener" target="_blank">dylan</a>
         </li>
     </ul>
   </div>
